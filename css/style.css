@@ -495,7 +495,6 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 24px;
@@ -504,6 +503,9 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .cearch__input {
+    width: 340px;
   }
 }
 
@@ -533,6 +535,7 @@ img {
             flex-direction: column;
     border: none;
     cursor: pointer;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
