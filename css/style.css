@@ -665,6 +665,7 @@ input:focus, button:focus {
 }
 
 .booking {
+  font-family: 'Nunito', sans-serif;
   width: 350px;
   min-height: 210px;
   border-radius: 8px;
