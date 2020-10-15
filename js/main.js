@@ -50,4 +50,25 @@ modalClose.addEventListener("click", function(event) {
       }
     }
 });
+
+//обработка формы с помощью jquery
+$('.form').each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Укажите ваше имя",
+      minlength: "Имя должно быть не менее 2х символов"
+    },
+    phone: "Введите ваш телефон",
+    email: {
+      required: "Укажите ваш email",
+      email: "email должен быть формата name@domain.com"
+    }
+  }
+  });
+});
+
+
+
 });

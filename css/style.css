@@ -395,6 +395,12 @@ input:focus, button:focus, textarea:focus {
   cursor: pointer;
 }
 
+.invalid {
+  font-size: 12px;
+  line-height: 15px;
+  color: tomato;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1302,6 +1308,10 @@ input:focus, button:focus, textarea:focus {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1401,14 +1411,18 @@ input:focus, button:focus, textarea:focus {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   resize: none;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1439,7 +1453,7 @@ input:focus, button:focus, textarea:focus {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1513,7 +1527,7 @@ input:focus, button:focus, textarea:focus {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -1739,7 +1753,7 @@ input:focus, button:focus, textarea:focus {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
