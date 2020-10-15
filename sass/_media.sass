@@ -11,7 +11,7 @@
     &__slide
       width: 590px
   .card
-    width: 230px  
+    width: 230px
     height: 230px
   .footer
     &__input
@@ -64,11 +64,11 @@
   .footer
     &__wrapper
       grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px 
+      grid-row-gap: 40px
     &__input
       flex-basis: 49%
     &__textarea
-      max-width: 700px  
+      max-width: 700px
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -91,6 +91,8 @@
       &-form
         grid-column: span 5
         grid-row: 4
+  .modal__dialog
+    min-width: 60%
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -112,7 +114,7 @@
       position: fixed
       left: 0
       right: 0
-      bottom: 0 
+      bottom: 0
       top: 78px
       padding-top: 30px
       &--visible
@@ -177,7 +179,7 @@
       min-height: 450px
     &-slider
       height: 350px
-  .booking 
+  .booking
     width: 100%
   .map
     width: 100%
@@ -215,6 +217,8 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal__dialog
+    min-width: 70%
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -253,14 +257,16 @@
       grid-column: 1
     &__categories
       grid-row: 4
-      grid-column: 1  
+      grid-column: 1
     &__legal
-      grid-row: 5  
+      grid-row: 5
       grid-column: 1
     &__contact
-      &-details    
+      &-details
         grid-row: 6
         grid-column: 1
       &-form
         grid-row: 7
         grid-column: 1
+  .modal__dialog
+    min-width: 90%
